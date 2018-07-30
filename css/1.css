@@ -1,0 +1,84 @@
+body{
+      /* background: black url(John.jpg); */
+      font-family: 'Source Sans Pro', sans-serif;
+      overflow: hidden;
+      background-image: url('John.jpg');
+}
+
+
+
+.menu, .sidebox, .main-view{
+      position: fixed;
+}
+.menu, .menu a, .bottom-text{
+      color: white;
+} 
+
+.main-view {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      /* background: #333; */
+      z-index: 9000;
+      overflow: auto;
+}
+.menu{
+      right: 0;
+      top: 0;
+      z-index: 10000;
+      padding: 15px;
+      margin: 10px;
+      margin-top: 60px;
+      margin-right: 40px;
+}
+      .menu a{
+            padding: 7px 15px;
+            font-size: 90%;
+      }
+
+.sidebox{
+      left: 0;
+      bottom: 0;
+      background: #FFF;
+      min-height: 150px;
+      min-width: 80px;
+      z-index: 10001;
+}
+
+.bottom-text{
+      position: absolute;
+      right: 30;
+      /* bottom: 50; */
+      z-index: 10002;
+      padding: 25px;
+      font-size: 30;
+      text-align: right;
+      font-family: 'Montserrat',sans-serif;
+      bottom: -120; 
+}
+
+/* SLIDER */
+.slider{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      cursor: move;
+}
+      .slides{
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            /* display: inline; */
+      }
+            .slide{
+                  position: absolute;
+                  float: left;
+                  width: 0;
+                  height: 100%;
+            }
+
+            .current{
+                  z-index: 9001;
+            }
